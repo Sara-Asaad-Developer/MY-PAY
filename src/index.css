@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NZ+Guides&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stack+Sans+Notch:wght@200..700&display=swap');
+@import "tailwindcss";
+@plugin "daisyui";
+
+@theme {
+    --font-sara: "Playwrite NZ Guides",
+        cursive;
+}
+@theme {
+    --font-peto: "Slabo 27px",
+        serif;
+}
+@theme {
+    --font-julia: "Stack Sans Notch",
+        sans-serif;
+    }
