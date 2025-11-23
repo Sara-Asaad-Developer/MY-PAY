@@ -4,12 +4,12 @@ import HomePage from './Pages/HomePage';
 import Header from './Componants/Header';
 export default function App() {
   return (
-    <div>
+    <div className='w-full h-dvh overflow-auto'>
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path='/' element={<LoginPage/> } />
-          <Route path='/src/Pages/HomePage.jsx' element={ <HomePage/>} />
+          <Route path='/' element={<LoginPage />} />
+          <Route path='home' element={<HomePage />} />
 
         </Routes>
       </BrowserRouter>

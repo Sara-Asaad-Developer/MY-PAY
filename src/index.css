@@ -8,11 +8,14 @@
     --font-sara: "Playwrite NZ Guides",
         cursive;
 }
+
 @theme {
     --font-peto: "Slabo 27px",
         serif;
 }
+
 @theme {
     --font-julia: "Stack Sans Notch",
         sans-serif;
-    }
+}
+
