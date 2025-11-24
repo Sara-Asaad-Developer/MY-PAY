@@ -4,7 +4,7 @@ import HomePage from './Pages/HomePage';
 import Header from './Componants/Header';
 export default function App() {
   return (
-    <div className='w-full h-dvh overflow-auto'>
+    <div className='w-full h-dvh  flex flex-col overflow-auto'>
       <BrowserRouter>
         <Header />
         <Routes>
