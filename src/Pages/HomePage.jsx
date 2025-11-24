@@ -1,5 +1,6 @@
 import { useRef, useState } from "react"
 import moment from "moment";
+import LoginPage from "./LoginPage";
 
 export default function HomePage() {
   const amountInput = useRef();
@@ -59,9 +60,9 @@ export default function HomePage() {
     }
   };
   return (
-    <div className="w-full h-dvh overflow-auto bg-[#4b0d40] flex flex-col gap-4  items-center justify-center pt-10 ">
-      <div className="w-[80%] h-dvh overflow-auto bg-[#190c3a] p-[30px]  pt-20 rounded-[20px] shadow-2xl shadow-red-500 ">
-        <div className=" flex justify-center gap-5 pb-10">
+    <div className="w-full h-dvh overflow-auto bg-[#4b0d40] flex flex-col gap-4  items-center justify-center p-10 ">
+      <div className="w-[80%] h-dvh overflow-auto bg-[#190c3a] pt-10 rounded-[20px] shadow-2xl shadow-red-500 ">
+        <div className=" flex justify-center gap-5 p-10">
           <p className="text-3xl font-peto"> Balance EL  {balanceIndex ? balance : '*******'}</p>
           <button className={` w-75 text-[#12023e] ${balanceIndex ? "btn bg-[#f7f4f4]" : "btn bg-[#f93a4a]"}`}
             onClick={toggelBalance}>{balanceIndex ? 'Hid Balance' : 'Show Balance'}</button>
@@ -129,6 +130,8 @@ export default function HomePage() {
 
   )
 };
-
+// 1 - بناء صفحة LoginPage
+// 2 - تسجيل في ال local storedg
+// 3تعديل خطاء في التابل ال الاضافه والخصم بتتكرر فى ال table
 // )bg - [#4b0d40]
 // bg - [#190c3a]
